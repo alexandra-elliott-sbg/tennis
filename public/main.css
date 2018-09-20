@@ -16,7 +16,8 @@ body{
 
 nav {
 	display: none;
-	height: 50px;
+	/* border prevents margin */
+	border: solid 1px green;
 }
 
 h2{
@@ -148,7 +149,7 @@ span.forgot{
  .burgerMenu {
     cursor: pointer;
     float: right;
-    padding: 4px;
+	padding: 4px;
 }
 
 .bar1, .bar2, .bar3 { 
