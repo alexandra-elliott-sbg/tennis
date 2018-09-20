@@ -1,5 +1,7 @@
 /* CSS Document */
-header {
+
+body header {
+
     background-color: green;
 }
 
@@ -9,94 +11,88 @@ body{
  font-size: 12px;
 }
 
-.burgerMenu, .mobH1{
+
+
+/* .burgerMenu, .mobH1{
 	display:none;
+} */
+
+nav {
+	display: none;
+	height: 50px;
 }
-header nav ul li h1{
-	display:block;
-	padding:0;
-	margin:5px;
-	font-size:1.2rem;
-	color: #DDEAF2;
-}
-.banner{
-	background-color: #046d12;
-	background-repeat: no-repeat;
-	height:100px;
-}
-.banner h2{
+
+h2{
+
     text-align: center;
 	top:20px;
 	left:120px;
 	font-size: 2em;
 }
 
-nav{
-	display: block;
-	
-}
+
 nav ul{
 	list-style: none;
 	display: flex; 
 	flex-direction: row;
 	justify-content: space-between;
+
+	text-decoration: none;
 }
 nav ul li{
 	border: none;
-	padding: 5px;
+	padding: 10px;
 	width: 160px;
+	font-size: 18px;
 }
+/* style of nav bar list items */
+
 nav ul li a{
 	border-left: 1px solid #DDEAF2;
 	color: #DDEAF2;
 	padding: 5px 10px;
-	transition: 0.4s;
+
 }
+
+/* nav text changes colour on hover */
 nav ul li a:hover{
-	color:#F294D1;
-	/* font-size: 4em; */
+	color: black;
 }
+
+
 .grid{
 	padding: 5px;
 	width: 25%;
 }
+
 .content{
 	display: flex;
 	box-sizing: border-box;
 } 
+
+
 .main {
     width : 100%;
-    text-align: center;
+	text-align: center;
+	color: white;
 } 
 
-/* checks if its on an ipad */
-@media (min-width: 601px) and (max-width: 1122px) { 
-	nav ul {
-		justify-content: space-between;
-	}
-	nav ul li{
-		width:auto;
-	}
-	nav ul li a{
-		width:auto;
-  	}
-  	nav ul li:last-child {
-		width: auto;
-  	}
-  	nav ul li form input[type=search]{
-		width: 120px;
-	}
-}
 .choices{
-    text-align: center;
-}
-
-.login{
 	text-align: center;
+	font-size: 40px;
+	color: white;
 }
 
-span.forgot{
-	font-size: 13px;
+.choices label{
+	border: solid white 2px;
+	padding: 2px;
+	background-color: green;
+}
+
+/* text changes colour when hovered over */
+.choices label:hover{
+	color: black;
+
 }
 
 .loginbox{
@@ -112,12 +108,19 @@ span.forgot{
 	text-align: center;
 	border-radius: 100px;
 	border: 20px solid white;
+
+	display: block;
+
 }
 
 .loginbox p{
 	font-weight: bold;
 	font-size: 18px;
+
+	display: block;
 }
+
+/* login button style */
 
 .button{
 	display: block;
@@ -132,8 +135,83 @@ span.forgot{
 	line-height: 42px;
 }
 
+
+/* forgot button */
+span.forgot{
+	font-size: 13px;
+}
+
+/* login button hover colour change */
+
 .button:hover{
 	background-color: white;
 	color: green;
 }
+
+   
+.menuLabel{ 
+    /* color:#DDEAF2;
+    float:left;
+    position: relative;
+    top: 8px;
+	left: -5px; */
+	display: none;
+}
+
+/* floats 'menu' text to left of burger menu */
+.bars{ 
+    float:left;
+ }
+
+ .burgerMenu {
+    cursor: pointer;
+    float: right;
+    padding: 4px;
+}
+
+.bar1, .bar2, .bar3 { 
+    width: 24px;
+    height: 4px;
+    background-color: #DDEAF2;
+    margin: 6px;
+    transition: 0.4s;
+} 
+
+.animateBurger .bar2 {
+    opacity: 0;
+}
+
+/* Rotate first bar */
+.animateBurger .bar1 {
+    transform: rotate(-45deg) translate(-6px, 8px);
+}
+ 
+/* Fade out the second bar */
+.animateBurger .bar2 {
+    opacity: 0
+}
+
+/* Rotate last bar */
+.animateBurger .bar3 {
+   transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* checks if its on an ipad */
+/* @media (min-width: 601px) and (max-width: 1122px) { 
+	nav ul {
+		justify-content: space-between;
+	}
+	nav ul li{
+		width:auto;
+	}
+	nav ul li a{
+		width:auto;
+  	}
+  	nav ul li:last-child {
+		width: auto;
+  	}
+  	nav ul li form input[type=search]{
+		width: 120px;
+	}
+} */
 

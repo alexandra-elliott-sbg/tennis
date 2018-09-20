@@ -18,74 +18,79 @@
 					<div class="bar3"></div>
 				</div>
 			</div>
-			<h1 class='mobH1'>Tennis 10</h1>
+
+			<!-- <h1 class='mobH1'>Tennis 10</h1> -->
 			<nav>
 				
 				<ul>
-					<li>
-						<h1>Tennis 10</h1>
-					</li>
-					<li>
-						<a href="results.html">Results</a>
-					</li>
-					<li>
-						<a href="leaderboard.html">Leaderboard</a>
-					</li>
-					<li>
-						<a href="logIn.html">Log In</a>
-					</li>
-					<li>
-						<a href="interaction.html">Interaction</a>
-					</li>
-					<li>
-						<a href="contactUs.html">Contact Us</a>
-					</li>
+						<li><a href="interaction.html">Interaction</a></li>
+						<li><a href="results.html">Results</a></li>
+						<li><a href="leaderboard.html">Leaderboard</a></li>
+
 				</ul>
 			</nav>
 		</div>
     </header>
-	<div class="container">
-		<div class="banner">
-			<h2>Choose Winners</h2>
-		</div>
-		<div class="content">
+    <div class="content">
 			<div class="main">
-				<h2>Some Heading</h2>
-				<p>Some explanation of how to play</p>
+					<h2>Choose Winners</h2>
+				<h2>Pick the winner of the first four games</h2>
+				
             </div>
         </div>
     <div class="choices">
-        <form action="">
+        <form>
             <div>
-                <label for="match1">Match 1</label>
-                <input type="number" name="match1_1" id="match1_1">
-                <input type="number" name="match1_2" id="match1_2">
+				
+				<input type="radio" name="match1" id="match1_1">
+				<label for="match1_1">Murray</label>
+				<label for="match1_2">Henman</label>
+				<input type="radio" name="match1" id="match1_2">
+				 
 
-            </div>
+			</div>
+			<p></p>
             <div>
-                <label for="match1">Match 2</label>
-                <input type="number" name="match2_1" id="match2_1">
-                <input type="number" name="match2_2" id="match2_2">
+                
+					<input type="radio" name="match2" id="match2_1">
+					<label for="match2_1">Williams</label>
+					<label for="match2_2">Konta</label>
+					<input type="radio" name="match2" id="match2_2">
 
-            </div>
+			</div>
+			<p></p>
             <div>
-                <label for="match1">Match 3</label>
-                <input type="number" name="match3_1" id="match3_1">
-                <input type="number" name="match3_2" id="match3_2">
+                
+					<input type="radio" name="match3" id="match3_1">
+					<label for="match3_1">Williams</label>
+					<label for="match3_2">Konta</label>
+					<input type="radio" name="match3" id="match3_2">
 
-            </div>
+			</div>
+			<p></p>
             <div>
-                <label for="match1">Match 4</label>
-                <input type="number" name="match4_1" id="match4_1">
-                <input type="number" name="match4_2" id="match4_2">
+                
+					<input type="radio" name="match4" id="match4_1">
+					<label for="match4_1">Federer</label>
+					<label for="match4_2">Becker</label>
+					<input type="radio" name="match4" id="match4_2">
 
-            </div>
+			</div>
+			<p></p>
+			<div>
+				<p></p>
+				<input type="submit">
+			</div>
+
         </form>
     </div>
     <footer>
 
 	</footer>
-<script src='js/addBet.js'>
-</script>
+
 </body>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="/burger.js"></script>
+
 </html>

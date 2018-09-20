@@ -1,24 +1,29 @@
 module.exports = {
+
     viewAll: (app, req, res) => {
         // res.send("View All");
         app.get('myDb').collection('staffCollection').find({}).toArray((err, docs) => {
+
             if (err) {
                 console.error(err)
             }
             res.json(docs)
         })
     },
+
     viewSingle: (app, req, res) => {
         let staffID = req.params.staffID;
         staffID = parseInt(staffID);
         //res.send(`Just one record looking for ${staffID}`);
         app.get('myDb').collection('staffCollection').find({'staffID': staffID}).toArray((err, docs) => {
+
             if (err) {
                 console.error(err)
             }
             res.json(docs)
         })
     },
+
     addStaff: (app, req, res) => {
         let newStaff = req.body;
         let staffID = parseInt(newStaff.staffID);
