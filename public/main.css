@@ -16,13 +16,7 @@ body{
 
 nav {
 	display: none;
-}
-header nav ul li h1{
-	display:block;
-	padding:0;
-	margin:5px;
-	font-size:1.2rem;
-	color: #DDEAF2;
+	height: 50px;
 }
 
 h2{
@@ -32,66 +26,47 @@ h2{
 	font-size: 2em;
 }
 
-/* nav{
-	display: block;
-	font-size: 18px;
-	text-decoration: none;
-	
-}  */
-
 nav ul{
 	list-style: none;
 	display: flex; 
 	flex-direction: row;
 	justify-content: space-between;
+	text-decoration: none;
 }
 nav ul li{
 	border: none;
-	padding: 5px;
+	padding: 10px;
 	width: 160px;
+	font-size: 18px;
 }
+/* style of nav bar list items */
 nav ul li a{
 	border-left: 1px solid #DDEAF2;
 	color: #DDEAF2;
 	padding: 5px 10px;
-	transition: 0.4s;
 }
+
+/* nav text changes colour on hover */
 nav ul li a:hover{
-	color:#F294D1;
-	/* font-size: 4em; */
+	color: black;
 }
+
 .grid{
 	padding: 5px;
 	width: 25%;
 }
+
 .content{
 	display: flex;
 	box-sizing: border-box;
 } 
+
 .main {
     width : 100%;
 	text-align: center;
 	color: white;
 } 
 
-/* checks if its on an ipad */
-/* @media (min-width: 601px) and (max-width: 1122px) { 
-	nav ul {
-		justify-content: space-between;
-	}
-	nav ul li{
-		width:auto;
-	}
-	nav ul li a{
-		width:auto;
-  	}
-  	nav ul li:last-child {
-		width: auto;
-  	}
-  	nav ul li form input[type=search]{
-		width: 120px;
-	}
-} */
 .choices{
 	text-align: center;
 	font-size: 40px;
@@ -104,21 +79,9 @@ nav ul li a:hover{
 	background-color: green;
 }
 
+/* text changes colour when hovered over */
 .choices label:hover{
 	color: black;
-}
-
-.choices label:active{
-	color: pink;
-}
-
-
-.login{
-	text-align: center;
-}
-
-span.forgot{
-	font-size: 13px;
 }
 
 .loginbox{
@@ -143,6 +106,7 @@ span.forgot{
 	display: block;
 }
 
+/* login button style */
 .button{
 	display: block;
 	margin: 0 auto;
@@ -156,39 +120,42 @@ span.forgot{
 	line-height: 42px;
 }
 
+/* forgot button */
+span.forgot{
+	font-size: 13px;
+}
+
+/* login button hover colour change */
 .button:hover{
 	background-color: white;
 	color: green;
 }
    
 .menuLabel{ 
-    color:#DDEAF2;
+    /* color:#DDEAF2;
     float:left;
     position: relative;
     top: 8px;
-    left: -5px;
+	left: -5px; */
+	display: none;
 }
 
-.burgerMenu {
-    cursor: pointer;
-    float: right;
-    padding: 4px;
-}
-
-.burgerMenu {
-    cursor: pointer;
-    float: right;
-    padding: 4px;
-}
-
+/* floats 'menu' text to left of burger menu */
 .bars{ 
     float:left;
  }
+
+ .burgerMenu {
+    cursor: pointer;
+    float: right;
+    padding: 4px;
+}
+
 .bar1, .bar2, .bar3 { 
     width: 24px;
     height: 4px;
     background-color: #DDEAF2;
-    margin: 6px 0;
+    margin: 6px;
     transition: 0.4s;
 } 
 
@@ -210,3 +177,22 @@ span.forgot{
 .animateBurger .bar3 {
    transform: rotate(45deg) translate(-6px, -8px);
 }
+
+/* checks if its on an ipad */
+/* @media (min-width: 601px) and (max-width: 1122px) { 
+	nav ul {
+		justify-content: space-between;
+	}
+	nav ul li{
+		width:auto;
+	}
+	nav ul li a{
+		width:auto;
+  	}
+  	nav ul li:last-child {
+		width: auto;
+  	}
+  	nav ul li form input[type=search]{
+		width: 120px;
+	}
+} */
