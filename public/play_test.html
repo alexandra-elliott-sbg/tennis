@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="test_mobile.css">
+	<!-- asks if its a screen and >600px then use desktop stylesheet -->
+	<link rel="stylesheet" media="only screen and (min-width : 600px)" href="test_desktop.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body>
+    <div class ="header">
+        <header>
+            <div class="container">
+                <div class="burgerMenu">
+                    <div class="menuLabel">MENU</div>
+                    <div class="bars">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <h1 class='mobH1'></h1>
+                <nav>
+                    
+                    <ul>
+                        <li>
+                            <a href="landing.html"></a>
+                        </li>
+                        <li>
+                            <a href="test.html">PLAY</a>
+                        </li>
+                        <li>
+                            <a href="leaderboard.html">LEADERBOARD</a>
+                        </li>
+                        <li>
+                            <a href="results.html">RESULTS</a>
+                        </li>
+                        <li>
+                            <a href="logIn.html">LOG IN</a>
+                        </li>
+                        <li class="searchItem">
+                            <form action="">
+                                <input type="text" placeholder="SEARCH" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class = "main">
+
+
+        <div class = "text">
+            <p>instructions</p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <p>Match 1 Player1 v Player2</p>
+                <span class="button">
+                    <input type="radio" name="1" value="1a" id="1a" />
+                    <label for="1a">player1</label>
+                </span>
+                <span class="button">
+                    <input type="radio" name="1" value="1b" id="1b" />
+                    <label for="1b">player2</label>
+                </span>
+            </div>
+            <div class="grid-item">
+                <p>Match 1 Player1 v Player2</p>
+                <span class="button">
+                    <input type="radio" name="1" value="1a" id="1a" />
+                    <label for="1a">player1</label>
+                </span>
+                <span class="button">
+                    <input type="radio" name="1" value="1b" id="1b" />
+                    <label for="1b">player2</label>
+                </span>
+            </div>
+            <div class="grid-item">
+                <p>Match 1 Player1 v Player2</p>
+                <span class="button">
+                    <input type="radio" name="1" value="1a" id="1a" />
+                    <label for="1a">player1</label>
+                </span>
+                <span class="button">
+                    <input type="radio" name="1" value="1b" id="1b" />
+                    <label for="1b">player2</label>
+                </span>
+            </div>
+            <div class="grid-item">
+                <p>Match 1 Player1 v Player2</p>
+                <span class="button">
+                    <input type="radio" name="1" value="1a" id="1a" />
+                    <label for="1a">player1</label>
+                </span>
+                <span class="button">
+                    <input type="radio" name="1" value="1b" id="1b" />
+                    <label for="1b">player2</label>
+                </span>
+            </div>
+        </div>
+        </div>
+        
+
+    <script src="js/jquery-3.2.1.min.js"></script> 
+    <script src="js/burger.js"></script>
+    </body>
+
+</html>
