@@ -81,6 +81,7 @@ nav ul li a:hover{
 	text-align: center;
 	font-size: 40px;
 	color: white;
+	padding: 5px;
 }
 
 .choices label{
