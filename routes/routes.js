@@ -5,9 +5,8 @@ var myControllers = require('../controllers/controller.js');
 
 router = (app) => {
     app.route('/api/bets')
-    .get((req, res) => myControllers.viewSingle(app, req, res))
-    .post((req, res) => myControllers.addStaff(app, req, res))
-
+    .get((req, res) => myControllers.viewAll(app, req, res))
+    .post((req, res) => myControllers.addBet(app, req, res))
 }
 
 

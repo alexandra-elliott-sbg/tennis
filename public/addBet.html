@@ -39,41 +39,41 @@
             </div>
         </div>
     <div class="choices">
-        <form>
+        <form id="makeBet" method="POST" action="/api/bets">
             <div>
 				
-				<input type="radio" name="match1" id="match1_1">
+				<input type="radio" name="match1" id="match1_1" value="1">
 				<label for="match1_1">Murray</label>
 				<label for="match1_2">Henman</label>
-				<input type="radio" name="match1" id="match1_2">
+				<input type="radio" name="match1" id="match1_2" value="2">
 				 
 
 			</div>
 			<p></p>
             <div>
                 
-					<input type="radio" name="match2" id="match2_1">
+					<input type="radio" name="match2" id="match2_1" value="3">
 					<label for="match2_1">Williams</label>
 					<label for="match2_2">Konta</label>
-					<input type="radio" name="match2" id="match2_2">
+					<input type="radio" name="match2" id="match2_2" value="4">
 
 			</div>
 			<p></p>
             <div>
                 
-					<input type="radio" name="match3" id="match3_1">
+					<input type="radio" name="match3" id="match3_1" value="5">
 					<label for="match3_1">Williams</label>
 					<label for="match3_2">Konta</label>
-					<input type="radio" name="match3" id="match3_2">
+					<input type="radio" name="match3" id="match3_2" value="6">
 
 			</div>
 			<p></p>
             <div>
                 
-					<input type="radio" name="match4" id="match4_1">
+					<input type="radio" name="match4" id="match4_1" value="7">
 					<label for="match4_1">Federer</label>
 					<label for="match4_2">Becker</label>
-					<input type="radio" name="match4" id="match4_2">
+					<input type="radio" name="match4" id="match4_2" value="8">
 
 			</div>
 			<p></p>
@@ -92,5 +92,5 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="/burger.js"></script>
-
+<script src="js/addBet.js"></script>
 </html>
