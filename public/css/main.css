@@ -1,3 +1,5 @@
+
+
 header{
 
 }
@@ -132,14 +134,6 @@ footer ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/* list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-top: 5px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 5px; */
 }
 footer ul li{
 	padding: 10px;
