@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+=======
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,8 +21,42 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Results</title>
+>>>>>>> 87d143578e5ad8f84c58f1a1f30bd9264b4edbc7
 </head>
 <body>
+<<<<<<< HEAD
+  <p id='results' class='results'>
+  </p>
+</body>
+
+<script>
+  var myObj, txt = "";
+  $.ajax({
+    type: "GET",
+    url: '/scores.json',
+    dataType: 'json',
+    async: false,
+    success: function (response) {
+      myObj = response;
+      txt += "<table class='table table-striped'><thead class='tableTheme'><tr>";
+      txt += "<th>Match</th><th>Player One</th><th>Score</th><th>Player Two</th>";
+      txt += "</tr></thead><tbody>";
+      for (x in myObj) {
+        txt += "<tr><td>" + myObj[x].match + "</td><td>" + myObj[x].player1 + "</td>";
+        txt += "<td>" + myObj[x].score + "</td><td>" + myObj[x].player2 + "</td></tr>";
+      }
+      txt += "</tbody></table>"
+      document.getElementById("results").innerHTML = txt;
+    },
+    error: function () {
+      console.log(arguments);
+      alert('Something went wrong!');
+    }
+
+  });
+
+</script>
+=======
 	<header>
 		<div class="container">
 			<div class="burgerMenu">
@@ -97,6 +140,7 @@
 				<li ><a href="#" class="social-media"><i class="fab fa-facebook" style="font-size:24px" ></i></a></li>
 				<li ><a href="#" class="social-media"><i class="fab fa-instagram" style="font-size:24px"></i></li>
 				<li ><a href="#" class="social-media"><i class="fab fa-twitter" style="font-size:24px"></i></li>
+>>>>>>> 87d143578e5ad8f84c58f1a1f30bd9264b4edbc7
 
 			</ul>
 		</div>
