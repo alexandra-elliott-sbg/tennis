@@ -1,94 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/test_mobile.css">
+	<!-- asks if its a screen and >600px then use desktop stylesheet -->
+	<link rel="stylesheet" media="only screen and (min-width : 600px)" href="/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Leaderboard</title>
-
-
-
-
 </head>
-
-
-
-<header>
-        <!-- burger menu -->
-        <div class="burgerMenu">
-            <div class="menuLabel"></div>
-            <div class="bars">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
-        <!-- !burger menu -->
-
-        <!-- nav bar -->
-        <div class="nav">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="results.html">Results</a>
-                    </li>
-                    <li>
-                        <a href="leaderboard.html">Leaderboard</a>
-                    </li>
-                    <li>
-                        <a href="interaction.html">Interaction</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!-- !nav bar -->
-
-
-
-
 <body>
+	<header>
+		<div class="container">
+			<div class="burgerMenu">
+				<div class="menuLabel"></div>
+				<div class="bars">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+			<h1 class='mobH1'></h1>
+			<nav>
 
+				<ul>
+          <li>
+            <a href="landing_page.html">Landing Page</a>
+          </li>
+					<li>
+						<a href="interaction.html">Play</a>
+					</li>
+					<li>
+						<a href="leaderboard.html">Leaderboard</a>
+					</li>
+					<li>
+						<a href="results.html">Results</a>
+					</li>
+					<li>
+						<a href="logIn2.html">Log In</a>
+					</li>
+					<li class="searchItem">
+						<form action="">
+							<input type="text" placeholder="SEARCH" name="search">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <main>
 
+    <div>
+            <class="table">
+                <table>
+                    <tr>
 
- 
+                            <h1 align="center">
+                                <i class="fas fa-crown"></i>Leaderboard</h1>
 
-
-        <div>
-            <class= "table, th, td">
-        
-
-        <div style="overflow-x:auto;"></div>
-        <table style="width:100%">
-            <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Score</th>
-            </tr>
-            <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>94</td>
-            </tr>
-            <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>50</td>
-            </tr>
-        </table>
-
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="material-icons" style="font-size:21px">looks_one</i>PlaceHolder</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="material-icons" style="font-size:21px">looks_two</i><p>PlaceHolder</p></td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="material-icons" style="font-size:21px">looks_3</i>PlaceHolder</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="material-icons" style="font-size:21px">looks_4</i>PlaceHolder</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="material-icons" style="font-size:21px">looks_5</i>PlaceHolder</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="material-icons" style="font-size:21px">looks_6</i>PlaceHolder</td>
+                        <td>0</td>
+                    </tr>
+                    </tr>
+                </table>
+                </class>
         </div>
+    </main>
+    <footer class="footer">
+        <!-- <ul class = "links">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+		<li><a href="#">Terms and Conditions</a></li>
+		<li ><a href="#" class="social-media"><i class="fa fa-copyright" style="font-size:12px";></i></li>
+        </ul>
+        <ul class ="sm">
+        <li ><a href="#" class="social-media"><i class="fa fa-facebook" style="font-size:24px" ></i></a></li>
+        <li ><a href="#" class="social-media"><i class="fa fa-instagram" style="font-size:24px"></i></li>
+		<li ><a href="#" class="social-media"><i class="fa fa-twitter" style="font-size:24px"></i></li>
+		<li ><a href="#" class="social-media"><i class="fa fa-envelope" style="font-size:24px"></i></li>
 
+		</ul> -->
+		<div>
+			<ul class ="sm">
+				<li ><a href="#" class="social-media"><i class="fab fa-facebook" style="font-size:24px" ></i></a></li>
+				<li ><a href="#" class="social-media"><i class="fab fa-instagram" style="font-size:24px"></i></li>
+				<li ><a href="#" class="social-media"><i class="fab fa-twitter" style="font-size:24px"></i></li>
 
-
-    </header>
+			</ul>
+		</div>
+		<div class="contacts">
+			<ul class = "contact">
+				<li  ><a href="#" class="social-media"><i class="fas fa-envelope" style="font-size:24px"></i></li>
+				<li ><a href="#" class="social-media"><i class="fas fa-phone" style="font-size:24px"></i></li>
+				<li ><a href="#" class="social-media"><i class="fas fa-home" style="font-size:24px"></i></li>
+			</ul>
+		</div>
+		<div class = "hiddenStuff" id="hiddenStuff" >
+		<ul class="contact">
+			<li ><a href="#" class="social-media"><i class="fa fa-envelope" style="font-size:24px"></i> phone number</li>
+			<li> <a href="#" class="social-media"><i class="fa fa-phone" style="font-size:24px"></i>email</li>
+			<li><a href="#" class="social-media"><i class="fa fa-home" style="font-size:24px"></i> address</li>
+		</ul>
+		</div>
+		<div>
+			<ul class="terms">
+				<li><a href="#">Terms and Conditions</a></li>
+				<li ><a href="#" class="social-media"><i class="fa fa-copyright" style="font-size:12px";></i></li>
+			</ul>
+		</div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/burger.js"></script>
 </body>
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="/burger.js"></script>
-
-
 </html>
