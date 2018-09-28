@@ -62,8 +62,9 @@ nav ul li a.active {
 	border-left: none;
 	cursor: pointer;
   }
+
 body{
-	background-image: url("green.jpg");
+	background-image: url("../images/green.jpg");
 	font-family: Arial, Helvetica, sans-serif;
 }
 
