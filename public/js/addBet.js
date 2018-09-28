@@ -23,7 +23,7 @@
             })
             .then(function (myData) {
                 console.dir(myData);
-                if(myData.msg === 'successful'){
+                if (myData.msg === 'successful') {
                     window.location.href = 'betSubmitted.html';
                 }
             })

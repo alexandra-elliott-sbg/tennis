@@ -1,7 +1,6 @@
 module.exports = {
 
     viewAll: (app, req, res) => {
-        // res.send("View All");
         app.get('myDb').collection('bets').find({}).toArray((err, docs) => {
 
             if (err) {

@@ -1,72 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>LeaderBoard</title>
-    <style>
-        table {
-            margin: 0 auto;
-            width: 300px;
-            height: 300px;
-        }
-        td {
-            border-bottom: 1px solid #ddd;
-            padding: 15px;
-            text-align: left;
-            font-size: 21px;
-        }
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-        h1 {
-            font-size: 18px;
-            color: black;
-            }
-</style>
-</head>
-<body>
-    <div>
-        <class="table">
-            <table>
-                <tr>
-                    <svg>
-                        <h1 align="center">Results</h1>
-                    </svg>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="material-icons" style="font-size:21px">looks_one</i>Match 1</td>
-                    <td>0</td>
 
-                </tr>
-                <tr>
-                    <td>
-                        <i class="material-icons" style="font-size:21px">looks_two</i>Match 2</td>
-                    <td>0</td>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        <i class="material-icons" style="font-size:21px">looks_3</i>Match 3</td>
-                    <td>0</td>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        <i class="material-icons" style="font-size:21px">looks_4</i>Match 4</td>
-                    <td>0</td>
-                    
-                </tr>
-                </tr>
-                </tr>
-            </table>
-            </class>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id='results' class='results'>
+  </p>
 </body>
+
+<script>
+  var myObj, txt = "";
+  $.ajax({
+    type: "GET",
+    url: '/scores.json',
+    dataType: 'json',
+    async: false,
+    success: function (response) {
+      myObj = response;
+      txt += "<table class='table table-striped'><thead class='tableTheme'><tr>";
+      txt += "<th>Match</th><th>Player One</th><th>Score</th><th>Player Two</th>";
+      txt += "</tr></thead><tbody>";
+      for (x in myObj) {
+        txt += "<tr><td>" + myObj[x].match + "</td><td>" + myObj[x].player1 + "</td>";
+        txt += "<td>" + myObj[x].score + "</td><td>" + myObj[x].player2 + "</td></tr>";
+      }
+      txt += "</tbody></table>"
+      document.getElementById("results").innerHTML = txt;
+    },
+    error: function () {
+      console.log(arguments);
+      alert('Something went wrong!');
+    }
+
+  });
+
+</script>
+
 </html>
