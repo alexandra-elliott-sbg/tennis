@@ -1,14 +1,10 @@
-header{
-
-}
-
 /* make nav links bigger */
+/* bug fixes */
+ul{
+	-webkit-padding-start: 0;
+}
 nav{
 	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	float: right;
 }
 
 nav ul{
@@ -113,8 +109,6 @@ input[type=submit] {
 }
 
 .footer {
-	position: fixed;
-	bottom: 0;
 	/* border-top: 1px solid darkslategray; */
 	width: 100%;
 	/* display: block;
@@ -173,6 +167,7 @@ footer ul li a{
 	background-color: aliceblue;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border: 1px solid darkslategray;
+	
 }
 table {
 	margin: auto;
