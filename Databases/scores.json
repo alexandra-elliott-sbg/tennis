@@ -1,8 +1,8 @@
 
 [
-    { "match": "1", "player1": "murray", "score1": "1", "player2": "Henman", "score2": "3" },
-    { "match": "2", "player1": "williams", "score1": "1", "player2": "konta", "score2": "3" },
-    { "match": "3", "player1": "williams", "score1": "3", "player2": "konta", "score2": "2" },
-    { "match": "4", "player1": "federer", "score1": "3", "player2": "becker", "score2": "0" }
+    { "match": "1", "winner": "murray"},
+    { "match": "2", "winner": "williams"},
+    { "match": "3", "winner": "williams"},
+    { "match": "4", "winner": "federer" }
 
 ]
