@@ -1,7 +1,6 @@
 (function () {
-
-    var form = document.getElementById('submitMyButt');
-    form.addEventListener('click', (ev) => {
+    var myForm = document.getElementById('makeBet')
+    myForm.addEventListener('submit', (ev) => {
         ev.preventDefault();
         console.info('forms submitted')
 

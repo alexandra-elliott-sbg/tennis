@@ -11,19 +11,18 @@ module.exports = {
     },
 
     addBet: (app, req, res) => {
+        console.log(req.body);
         let newBet = req.body;
-        console.log(newBet);
-
-        // assign bet ID
-        
-      
-       
+        // let betID = parseInt(newBet.betID);
+        // newBet.betID = betID
+        // console.info(newStaff);
+        // res.send('post')
+        // res.send(`here we'll add a record with this data `);
         app.get('myDb').collection('bets').insertOne(newBet, (err, docs) => {
             if (err) {
                 console.error(err)
             }
-            console.log(docs);
-            res.json({ 'msg': 'successful' })
+            res.json({'msg':'successful'})
         })
     }
 }
