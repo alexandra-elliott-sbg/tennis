@@ -1,7 +1,24 @@
 /* CSS Document */
+header {
+	background-color: #143E8E;
+	display: flex;
+	flex-direction: row;
+	color: white;
+}
 
-body header {
-	background-color: green;
+
+header h1{
+	display: flex;
+	flex-direction: row;
+}
+
+header .image{
+	margin:5px;
+	height:50px;
+	width: 180px;
+	padding-right: 10px;
+	display: flex; 
+	flex-direction: row;
 }
 
 body{
@@ -11,15 +28,15 @@ body{
  	font-size: 12px;
 }
 
-
-
 /* .burgerMenu, .mobH1{
 	display:none;
 } */
 
 nav {
 	display: none;
-	height: 50px;
+	/* border prevents margin */
+	border: solid 1px #143E8E;
+	background-color: darkblue;
 }
 
 h2{
@@ -42,7 +59,6 @@ nav ul{
 nav ul li{
 	border: none;
 	padding: 10px;
-	width: 160px;
 	font-size: 18px;
 }
 /* style of nav bar list items */
@@ -81,6 +97,7 @@ nav ul li a:hover{
 	text-align: center;
 	font-size: 40px;
 	color: white;
+	padding: 5px;
 }
 
 .choices label{
@@ -95,7 +112,20 @@ nav ul li a:hover{
 
 }
 
-.loginbox{
+.login {
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	padding-top: 150px;
+	color: white;
+}
+
+.avatars {
+	color: white;
+}
+
+
+/* .loginbox{
 	width: 600px;
 	height: 420px;
 	background-image: url('images/tenniscourt.jpg');
@@ -109,31 +139,18 @@ nav ul li a:hover{
 	border-radius: 100px;
 	border: 20px solid white;
 
-	display: block;
+	display: block; */
 
-}
+/* } */
 
-.loginbox p{
+/* .loginbox p{
 	font-weight: bold;
 	font-size: 18px;
 
 	display: block;
-}
+} */
 
-/* login button style */
 
-.button{
-	display: block;
-	margin: 0 auto;
-	height: 42px;
-	width: 42px;
-	background-color: yellowgreen;
-	color: white;
-	font-weight: bold;
-	border-radius: 20px;
-	text-decoration: none;
-	line-height: 42px;
-}
 
 
 /* forgot button */
@@ -148,27 +165,15 @@ span.forgot{
 	color: green;
 }
 
-   
-.menuLabel{ 
-    /* color:#DDEAF2;
-    float:left;
-    position: relative;
-    top: 8px;
-	left: -5px; */
-	display: none;
-}
-
-/* floats 'menu' text to left of burger menu */
-.bars{ 
-    float:left;
- }
-
+/*  */
+/*  */
+/* Burger Menu Section */
  .burgerMenu {
     cursor: pointer;
     float: right;
-    padding: 4px;
+	padding: 4px;
+	margin: 0px;
 }
-
 .bar1, .bar2, .bar3 { 
     width: 24px;
     height: 4px;
@@ -176,25 +181,23 @@ span.forgot{
     margin: 6px;
     transition: 0.4s;
 } 
-
 .animateBurger .bar2 {
     opacity: 0;
 }
-
 /* Rotate first bar */
 .animateBurger .bar1 {
     transform: rotate(-45deg) translate(-6px, 8px);
 }
- 
 /* Fade out the second bar */
 .animateBurger .bar2 {
     opacity: 0
 }
-
 /* Rotate last bar */
 .animateBurger .bar3 {
    transform: rotate(45deg) translate(-6px, -8px);
 }
+/* end of Burger Menu section */
+
 
 /* checks if its on an ipad */
 /* @media (min-width: 601px) and (max-width: 1122px) { 
@@ -214,6 +217,7 @@ span.forgot{
 		width: 120px;
 	}
 } */
+
 
 .footer {
     position: fixed;
@@ -264,4 +268,53 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 /* border{ 
 	border-spacing: solid;
 
+}
+.landing{
+	text-align: center;
+	color: white;
+	padding: 100px;
+	font-size: 20px;
+}
+
+/* team name text field style */
+.teamname {
+	width:250px;
+	height: 25px;
+	font-size: 20px;
+}
+
+/* landing page enter button style */
+
+.button{
+	display: block;
+	margin: 0 auto;
+	height: 42px;
+	width: 42px;
+	background-color: yellowgreen;
+	color: white;
+	font-weight: bold;
+	border-radius: 20px;
+	text-decoration: none;
+	line-height: 42px;
+	font-size: 13px;
+}
+
+#avatar {
+	height: 200px;
+	width:180px;
+}
+
+.avatars ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-top: 70px;
+	justify-content: space-between;
+}
+
+.submitted h1 {
+	text-align: center;
+	color: white;
 }
