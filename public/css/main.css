@@ -263,7 +263,9 @@ tr:hover {
 	border: 1px solid red;
 }
 
-.RS2{
-
+.lbTable{
+	margin: auto;
+	width: auto;
+	border: solid 1px darkslategray;
 
 }

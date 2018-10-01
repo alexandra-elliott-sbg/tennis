@@ -53,9 +53,10 @@
 			</nav>
 		</div>
 	</header>
+	<p id='leaderboard' class='leaderboard'></p>
     <main>
 
-    <div>
+    <!-- <div>
                 <table class="table">
                     <tr>
 
@@ -96,7 +97,7 @@
                     </tr>
                 </table>
                 </class>
-        </div>
+        </div> -->
     </main>
     <footer class="footer">
         <!-- <ul class = "links">
@@ -142,6 +143,33 @@
 		</div>
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/burger.js"></script>
+	<script src="js/burger.js"></script>
+	<script>
+		var myObj, txt = "";
+		$.ajax({
+			type: "GET",
+			url: '/databases/users.json',
+			dataType: 'json',
+			async: false,
+			success: function (response) {
+				myObj = response;
+				txt += "<table class='lbTable'><tr>";
+					txt += "<th>User</th><th>Round Score</th><th>Total Score</th>";
+				txt += "</tr></thead><tbody>"
+				for (x in myObj) {
+					txt += "<tr><td>" + myObj[x].userName + "</td><td>" + myObj[x].rScore + "</td>";
+					txt += "</td><td>" + myObj[x].tScore + "</td></tr>";
+				}
+				txt += "</tbody></table>"
+				document.getElementById("leaderboard").innerHTML = txt;
+			},
+			error: function () {
+				console.log(arguments);
+				alert('Something went wrong!');
+			}
+
+		});
+
+	</script>
 </body>
 </html>

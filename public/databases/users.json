@@ -1,6 +1,6 @@
 [
-    {"ID" : "1", "Username" : "alex_e", "password" : "ilovepuppies5", "bets" : []},
-    {"ID" : "2", "Username" : "joe_b", "password" : "ilovedogs", "bets" : []},
-    {"ID" : "3", "Username" : "cy_d", "password" : "ilovelove", "bets" : []},
-    {"ID" : "4", "Username" : "dec", "password" : "ilovebeardedmen", "bets" : []}
+    {"ID" : "1", "userName" : "alex_e", "password" : "ilovepuppies5", "bets" : [], "rScore" : "5", "tScore" : "25"},
+    {"ID" : "2", "userName" : "joe_b", "password" : "ilovedogs", "bets" : [], "rScore" : "5", "tScore" : "10"},
+    {"ID" : "3", "userName" : "cy_d", "password" : "ilovelove", "bets" : [], "rScore" : "0", "tScore" : "15"},
+    {"ID" : "4", "userName" : "dec", "password" : "ilovebeardedmen", "bets" : [], "rScore" : "5", "tScore" : "15"}
 ]
