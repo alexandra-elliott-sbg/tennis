@@ -1,6 +1,0 @@
-[
-    {"ID" : "1", "Username" : "alex_e", "password" : "ilovepuppies5", "bets" : []},
-    {"ID" : "2", "Username" : "joe_b", "password" : "ilovedogs", "bets" : []},
-    {"ID" : "3", "Username" : "cy_d", "password" : "ilovelove", "bets" : []},
-    {"ID" : "4", "Username" : "dec", "password" : "ilovebeardedmen", "bets" : []}
-]

@@ -3,6 +3,10 @@
 	box-sizing: border-box;
 }
 /* bug fixes */
+*{
+	box-sizing: border-box;
+}
+/* bug fixes */
 html{
 	height: 100%;
 }
@@ -122,6 +126,7 @@ input[type=submit] {
 }
 
 .footer {
+	/* border-top: 1px solid darkslategray; */
 	position: fixed;
 	bottom: 0;
 	width: 100%;
