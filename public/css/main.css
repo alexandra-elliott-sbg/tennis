@@ -1,4 +1,22 @@
 /* make nav links bigger */
+*{
+	box-sizing: border-box;
+}
+/* bug fixes */
+*{
+	box-sizing: border-box;
+}
+/* bug fixes */
+html{
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+  }
+
 /* bug fixes */
 ul{
 	-webkit-padding-start: 0;
@@ -110,30 +128,16 @@ input[type=submit] {
 
 .footer {
 	/* border-top: 1px solid darkslategray; */
-	width: 100%;
-	/* display: block;
 	position: fixed;
-	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: black;
-	color: white;
-	text-align: center;
-	height: 50px; */
 }
+
 footer ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/* list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-top: 5px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 5px; */
 }
 footer ul li{
 	padding: 10px;
@@ -159,7 +163,6 @@ footer ul li a{
 	grid-template-columns: auto auto ;
 	grid-template-rows: auto auto;
 	grid-gap: 30px;
-	/* background-color: aquamarine; */
 }
 .grid-item {
 	width: 100%;
@@ -169,33 +172,28 @@ footer ul li a{
 	border: 1px solid darkslategray;
 	
 }
-table {
+.table {
 	margin: auto;
 	width: auto;
-	/* height: 300px; */
 	border: solid 1px darkslategray;
 }
-table tr {
+.table tr {
 	border: 1px solid darkslategray;
 }
-table tr td {
+.table tr td {
 
 	padding: 15px;
 	text-align: left;
 	font-size: 21px;
 }
 tr:hover {
-	/* background-color: #f5f5f5; */
 }
-table tr svg h1 {
+
+.table tr svg h1 {
 	border: solid 1px darkslategray;
 	font-size: 21px;
 	color: black;
-	}
-/* table tr td p {
-	font-size: 21px;
 }
- */
 
  .landing{
  	text-align: center;
@@ -255,3 +253,17 @@ table tr svg h1 {
  	display: flex;
  	flex-direction: row;
  }
+
+ .RS1 {
+	margin: auto;
+	width: auto;
+	border: solid 1px darkslategray;
+}
+.RS1 table tr td {
+	border: 1px solid red;
+}
+
+.RS2{
+
+
+}
