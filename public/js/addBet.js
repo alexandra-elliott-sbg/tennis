@@ -1,11 +1,13 @@
 (function () {
     var myForm = document.getElementById('makeBet')
+    var player = document.location.hash.slice(1)
     myForm.addEventListener('submit', (ev) => {
         ev.preventDefault();
         console.info('forms submitted')
 
         let formData = {};
-        $('#makeBet').serializeArray().forEach(function(match){
+        $('#makeBet').serializeArray().forEach(function(match, player){
+            formUser = player;
             formData[match.name] = match.value;
         });
 
@@ -24,8 +26,10 @@
             .then(function (myData) {
                 console.dir(myData);
                 if (myData.msg === 'successful') {
-                    window.location.href = 'betSubmitted.html';
+                    window.location.href = 'betSubmitted.html#' + player;
                 }
             })
     })
 })();
+
+document.location.hash.slice(1)
