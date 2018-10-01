@@ -1,6 +1,8 @@
 /* make nav links bigger */
 *{
 	box-sizing: border-box;
+	text-align: center;
+	color: white;
 }
 /* bug fixes */
 *{
@@ -123,7 +125,7 @@ input[type=submit] {
 	padding: 10px;
 }
 .burgerMenu, .mobH1{
-	display:none;
+	/* display:none; */
 }
 
 .footer {
@@ -205,7 +207,6 @@ tr:hover {
  /* team name text field style */
  .teamname {
  	width:250px;
- 	height: 25px;
  	font-size: 20px;
  }
 
@@ -263,9 +264,28 @@ tr:hover {
 	border: 1px solid red;
 }
 
+<<<<<<< HEAD
 .lbTable{
 	margin: auto;
 	width: auto;
 	border: solid 1px darkslategray;
-
+=======
+.RS2, table, th, tr, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: center;
+	height: 35px;
 }
+
+.RS2{
+	width: 90%;
+}
+>>>>>>> 6dface5ae5f079a2e7f630bccf82b279e8095056
+
+.RS2 th, td{
+	padding: 5px;
+	text-align: center;
+}
+
+tr:nth-child(even) {background-color: lightgrey;}
