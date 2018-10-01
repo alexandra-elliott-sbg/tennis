@@ -17,6 +17,7 @@ body {
 	height: 100vh;
   }
 
+/* bug fixes */
 ul{
 	-webkit-padding-start: 0;
 }

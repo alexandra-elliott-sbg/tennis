@@ -1,0 +1,319 @@
+/* CSS Document */
+header {
+	background-color: #143E8E;
+	display: flex;
+	flex-direction: row;
+	color: white;
+}
+
+
+header h1{
+	display: flex;
+	flex-direction: row;
+}
+
+header .image{
+	margin:5px;
+	height:50px;
+	width: 180px;
+	padding-right: 10px;
+	display: flex; 
+	flex-direction: row;
+}
+
+body{
+	border: 5px solid black;
+ 	background-color: #447C66;
+ 	font-family:'Bitter', serif;
+ 	font-size: 12px;
+}
+
+/* .burgerMenu, .mobH1{
+	display:none;
+} */
+
+nav {
+	display: none;
+	/* border prevents margin */
+	border: solid 1px #143E8E;
+	background-color: darkblue;
+}
+
+h2{
+
+    text-align: center;
+	top:20px;
+	left:120px;
+	font-size: 2em;
+}
+
+
+nav ul{
+	list-style: none;
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-between;
+
+	text-decoration: none;
+}
+nav ul li{
+	border: none;
+	padding: 10px;
+	font-size: 18px;
+}
+/* style of nav bar list items */
+
+nav ul li a{
+	border-left: 1px solid white;
+	color: white;
+	padding: 5px 10px;
+
+}
+
+/* nav text changes colour on hover */
+nav ul li a:hover{
+	color: black;
+}
+
+
+.grid{
+	padding: 5px;
+	width: 25%;
+}
+
+.content{
+	display: flex;
+	box-sizing: border-box;
+} 
+
+
+.main {
+    width : 100%;
+	text-align: center;
+	color: white;
+} 
+
+.choices{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	padding: 5px;
+}
+
+.choices label{
+	border: solid white 2px;
+	padding: 2px;
+	background-color: green;
+}
+
+/* text changes colour when hovered over */
+.choices label:hover{
+	color: black;
+
+}
+
+.login {
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	padding-top: 150px;
+	color: white;
+}
+
+.avatars {
+	color: white;
+}
+
+
+/* .loginbox{
+	width: 600px;
+	height: 420px;
+	background-image: url('images/tenniscourt.jpg');
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 100px;
+	border: 20px solid white;
+
+	display: block; */
+
+/* } */
+
+/* .loginbox p{
+	font-weight: bold;
+	font-size: 18px;
+
+	display: block;
+} */
+
+
+
+
+/* forgot button */
+span.forgot{
+	font-size: 13px;
+}
+
+/* login button hover colour change */
+
+.button:hover{
+	background-color: white;
+	color: green;
+}
+
+/*  */
+/*  */
+/* Burger Menu Section */
+ .burgerMenu {
+    cursor: pointer;
+    float: right;
+	padding: 4px;
+	margin: 0px;
+}
+.bar1, .bar2, .bar3 { 
+    width: 24px;
+    height: 4px;
+    background-color: #DDEAF2;
+    margin: 6px;
+    transition: 0.4s;
+} 
+.animateBurger .bar2 {
+    opacity: 0;
+}
+/* Rotate first bar */
+.animateBurger .bar1 {
+    transform: rotate(-45deg) translate(-6px, 8px);
+}
+/* Fade out the second bar */
+.animateBurger .bar2 {
+    opacity: 0
+}
+/* Rotate last bar */
+.animateBurger .bar3 {
+   transform: rotate(45deg) translate(-6px, -8px);
+}
+/* end of Burger Menu section */
+
+
+/* checks if its on an ipad */
+/* @media (min-width: 601px) and (max-width: 1122px) { 
+	nav ul {
+		justify-content: space-between;
+	}
+	nav ul li{
+		width:auto;
+	}
+	nav ul li a{
+		width:auto;
+  	}
+  	nav ul li:last-child {
+		width: auto;
+  	}
+  	nav ul li form input[type=search]{
+		width: 120px;
+	}
+} */
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.table, th, td{
+	
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	position: flex;
+	
+
+}
+
+th {
+	height: 50px
+
+}
+
+td {
+	height: 50px;
+	vertical-align: bottom;
+}
+
+th, td{
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+/* border{ 
+	border-spacing: solid;
+
+}
+.landing{
+	text-align: center;
+	color: white;
+	padding: 100px;
+	font-size: 20px;
+}
+
+/* team name text field style */
+.teamname {
+	width:250px;
+	height: 25px;
+	font-size: 20px;
+}
+
+/* landing page enter button style */
+
+.button{
+	display: block;
+	margin: 0 auto;
+	height: 42px;
+	width: 42px;
+	background-color: yellowgreen;
+	color: white;
+	font-weight: bold;
+	border-radius: 20px;
+	text-decoration: none;
+	line-height: 42px;
+	font-size: 13px;
+}
+
+#avatar {
+	height: 200px;
+	width:180px;
+}
+
+.avatars ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-top: 70px;
+	justify-content: space-between;
+}
+
+.submitted h1 {
+	text-align: center;
+	color: white;
+}
