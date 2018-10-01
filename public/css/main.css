@@ -1,6 +1,8 @@
 /* make nav links bigger */
 *{
 	box-sizing: border-box;
+	text-align: center;
+	color: white;
 }
 /* bug fixes */
 *{
@@ -123,7 +125,7 @@ input[type=submit] {
 	padding: 10px;
 }
 .burgerMenu, .mobH1{
-	display:none;
+	/* display:none; */
 }
 
 .footer {
@@ -205,7 +207,6 @@ tr:hover {
  /* team name text field style */
  .teamname {
  	width:250px;
- 	height: 25px;
  	font-size: 20px;
  }
 
@@ -264,6 +265,6 @@ tr:hover {
 }
 
 .RS2{
-
+	border: 1px solid black;
 
 }

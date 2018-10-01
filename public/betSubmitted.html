@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Interaction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/css/main.css">
+	<title>Interaction</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
+	<header>
+		<div class="container">
 			<div class="burgerMenu">
 				<div class="menuLabel">Menu</div>
 				<div class="bars">
@@ -21,12 +23,12 @@
 
 			<nav>
 
-        <ul>
-          <li>
-            <a href="landing_page.html">Landing Page</a>
-          </li>
+				<ul>
 					<li>
-						<a href="interaction.html">Play</a>
+						<a href="landing_page.html">Landing Page</a>
+					</li>
+					<li>
+						<a href="addBet.html">Play</a>
 					</li>
 					<li>
 						<a href="leaderboard.html">Leaderboard</a>
@@ -46,11 +48,17 @@
 				</ul>
 			</nav>
 		</div>
-    </header>
-    <div class="submitted">
-		<h1>Your choices</h1>
-    </div>
-    <footer>
+	</header>
+
+	<div class="submitted">
+		<h1>Your choices have been submitted.</h1>
+	</div>
+
+	<div id="bets">
+
+	</div>
+
+	<footer>
 
 	</footer>
 
@@ -58,6 +66,35 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="/js/burger.js"></script>
-<!-- <script src="/js/addBet.js"></script> -->
+<script src="/js/viewAll.js"></script>
+
+<script>
+	var myObj, txt = "";
+	$.ajax({
+		type: "GET",
+		url: '/api/bets',
+		dataType: 'json',
+		async: false,
+		success: function (response) {
+			myData = response;
+			txt += "<table class='RS2'><tr>";
+			txt += "<th>Player</th><th>Match 1</th><th>Match 2</th><th>Match 3</th><th>Match 4</th>";
+			txt += "</tr></thead><tbody>";
+			for (x in myData) {
+				txt += "<tr><td>" + myData[x]._id + "<td><td>" + myData[x].match1 + "</td><td>" + myData[x].match2 + "</td>";
+				txt += "<td>" + myData[x].match3 + "</td><td>" + myData[x].match4 + "</td></tr>";
+			}
+			txt += "</tbody></table > "
+			document.getElementById("bets").innerHTML = txt
+		},
+		error: function () {
+			console.log(arguments);
+			alert('Something went wrong!');
+		}
+
+	});
+
+</script>
+
 
 </html>
