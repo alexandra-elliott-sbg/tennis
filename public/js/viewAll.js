@@ -5,4 +5,5 @@ fetch('/api/bets')
 })
 .then(function(myData){
     console.dir(myData)
+    
 })

@@ -12,6 +12,14 @@ router = (app) => {
     //     controller.someFunc(app,req,res,req.params.userID,req.params.teamName)
     // })
 
+    // app.route('/api/bets/:userID')
+    // .get((req, res) => myControllers.viewBet(app, req, res))
+    // .post((req, res) => myControllers.addBet(app, req, res))
+
+    app.route('/api/scores')
+    .get((req, res) => myControllers.viewScores(app, req, res))
+    .post((req, res) => myControllers.addScore(app, req, res))
+
 }
 
 
