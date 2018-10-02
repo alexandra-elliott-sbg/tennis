@@ -1,0 +1,54 @@
+nav {
+    display: block;
+    position: absolute;
+	top: 0;
+	right: 0;
+	float: right;
+}
+nav ul{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+nav ul li{
+    border: none;
+    margin-left: 50px;
+    padding:5px;
+}
+ul{
+
+    -webkit-padding-start: 0px;
+}
+nav ul li a{
+    
+    color: white;
+    text-decoration: none;
+}
+.image{
+    padding: 25px;
+}
+.searchItem{
+    border: none;
+}
+
+.burgerMenu {
+    display: none;
+}
+/* end of mobile */
+
+.contacts {
+    display: none;
+}
+.hiddenStuff {
+    display: block;
+}
+/* end footer */
+.content {
+    padding: 20px;
+    padding-top: 100px;
+
+}
+.choices {
+    margin-bottom: 200px;
+}
+
