@@ -46,9 +46,11 @@ nav ul li a{
 .searchItem{
     /* border-bottom: 1px solid darkslategray; */
     /* border: none; */
+    display: flex;
+    flex-direction: column;
 }
 .searchItem input{
-    width: 75%;
+    /* width: 75%; */
 
 }
 .searchItem button{
@@ -56,6 +58,9 @@ nav ul li a{
     font-size: 17px;
     cursor: pointer;
 
+}
+form {
+    width: 100%;
 }
 /* end of search */
 .bars{
@@ -103,17 +108,13 @@ nav ul li a{
 /* end of mobile */
 footer{
     width: 100%;
-
-
 }
 
 footer ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-
     justify-content: center;
-
 }
 footer ul li{
 	padding: 10px;
@@ -123,7 +124,6 @@ footer ul li a{
 	text-decoration: none;
 	color: darkslategray;
 }
-
 .hiddenStuff {
     display: none;
 }
@@ -208,7 +208,3 @@ label {
     border-radius: 10px;
     background-color: gray;
 }
-
-
-
-
