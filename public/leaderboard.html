@@ -53,9 +53,10 @@
 			</nav>
 		</div>
 	</header>
+	<p id='leaderboard' class='leaderboard'></p>
     <main>
 
-    <div>
+    <!-- <div>
                 <table class="table">
                     <tr>
 
@@ -93,7 +94,7 @@
                     </tr>
                 </table>
                 </class>
-        </div>
+        </div> -->
     </main>
     <footer class="footer">
         <ul class = "links">
@@ -112,4 +113,60 @@
 
 
 
+<<<<<<< HEAD
+			</ul>
+		</div>
+		<div class="contacts">
+			<ul class = "contact">
+				<li  ><a href="#" class="social-media"><i class="fas fa-envelope" style="font-size:24px"></i></li>
+				<li ><a href="#" class="social-media"><i class="fas fa-phone" style="font-size:24px"></i></li>
+				<li ><a href="#" class="social-media"><i class="fas fa-home" style="font-size:24px"></i></li>
+			</ul>
+		</div>
+		<div class = "hiddenStuff" id="hiddenStuff" >
+		<ul class="contact">
+			<li ><a href="#" class="social-media"><i class="fa fa-envelope" style="font-size:24px"></i> phone number</li>
+			<li> <a href="#" class="social-media"><i class="fa fa-phone" style="font-size:24px"></i>email</li>
+			<li><a href="#" class="social-media"><i class="fa fa-home" style="font-size:24px"></i> address</li>
+		</ul>
+		</div>
+		<div>
+			<ul class="terms">
+				<li><a href="#">Terms and Conditions</a></li>
+				<li ><a href="#" class="social-media"><i class="fa fa-copyright" style="font-size:12px";></i></li>
+			</ul>
+		</div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/burger.js"></script>
+	<script>
+		var myObj, txt = "";
+		$.ajax({
+			type: "GET",
+			url: '/databases/users.json',
+			dataType: 'json',
+			async: false,
+			success: function (response) {
+				myObj = response;
+				txt += "<table class='lbTable'><tr>";
+					txt += "<th>User</th><th>Round Score</th><th>Total Score</th>";
+				txt += "</tr></thead><tbody>"
+				for (x in myObj) {
+					txt += "<tr><td>" + myObj[x].userName + "</td><td>" + myObj[x].rScore + "</td>";
+					txt += "</td><td>" + myObj[x].tScore + "</td></tr>";
+				}
+				txt += "</tbody></table>"
+				document.getElementById("leaderboard").innerHTML = txt;
+			},
+			error: function () {
+				console.log(arguments);
+				alert('Something went wrong!');
+			}
+
+		});
+
+	</script>
+</body>
+=======
+>>>>>>> 6dface5ae5f079a2e7f630bccf82b279e8095056
 </html>

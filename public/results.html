@@ -170,17 +170,21 @@
 		var myObj, txt = "";
 		$.ajax({
 			type: "GET",
+<<<<<<< HEAD
+			url: 'api/bets',
+=======
 			url: '/Databases/scores.json',
+>>>>>>> 6dface5ae5f079a2e7f630bccf82b279e8095056
 			dataType: 'json',
 			async: false,
 			success: function (response) {
-				myObj = response;
-				txt += "<table class='RS1'><tr>";
+				myData = response;
+				txt += "<table class='resTable'><tr>";
 				txt += "<th>Match</th><th>Player One</th><th>Score</th><th>Player Two</th>";
 				txt += "</tr></thead><tbody>";
-				for (x in myObj) {
-					txt += "<tr><td>" + myObj[x].match + "</td><td>" + myObj[x].player1 + "</td>";
-					txt += "<td>" + myObj[x].score + "</td><td>" + myObj[x].player2 + "</td></tr>";
+				for (x in myData) {
+					txt += "<tr><td>" + myData[x].match + "</td><td>" + myData[x].player1 + "</td>";
+					txt += "<td>" + myData[x].score + "</td><td>" + myData[x].player2 + "</td></tr>";
 				}
 				txt += "</tbody></table>"
 				document.getElementById("results").innerHTML = txt;
