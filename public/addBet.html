@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobilev2.css">
     <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/desktop.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
@@ -72,8 +72,11 @@
 
 
 	<div class="allChoices">
-		<form id="makeBet" method="POST" action="/api/bets">
-
+        <form id="makeBet" method="POST" action="/api/bets">
+            <div class = "match">
+			<div class = "matchInfo">
+				<p> Date and Time and Stuff</p>
+			</div>
 			<div class = "choice">
 				<div class = "player1">
 					<input type="radio" name="match1" id="match1_1" value="1">
@@ -86,8 +89,12 @@
 					<input type="radio" name="match1" id="match1_2" value="2">
 					<label for="match1_2">Konta</label>
 				</div>
+            </div>
+            </div>
+            <div class = "match">
+			<div class = "matchInfo">
+				<p> Date and Time and Stuff</p>
 			</div>
-
 			<div class = "choice">
 				<div class = "player1">
 					<input type="radio" name="match2" id="match2_1" value="1">
@@ -100,8 +107,12 @@
 					<input type="radio" name="match2" id="match2_2" value="2">
 					<label for="match2_2">Williams</label>
 				</div>
+            </div>
+            </div>
+            <div class = "match">
+			<div class = "matchInfo">
+				<p> Date and Time and Stuff</p>
 			</div>
-
 			<div class = "choice">
 				<div class = "player1">
 					<input type="radio" name="match3" id="match3_1" value="1">
@@ -114,8 +125,12 @@
 					<input type="radio" name="match3" id="match3_2" value="2">
 					<label for="match3_2">Konta</label>
 				</div>
+            </div>
+            </div>
+            <div class = "match">
+			<div class = "matchInfo">
+				<p> Date and Time and Stuff</p>
 			</div>
-
 			<div class = "choice">
 				<div class = "player1">
 					<input type="radio" name="match4" id="match4_1" value="1">
@@ -128,7 +143,8 @@
 					<input type="radio" name="match4" id="match4_2" value="2">
 					<label for="match4_2">Williams</label>
 				</div>
-			</div>
+            </div>
+            </div>
 
 
 

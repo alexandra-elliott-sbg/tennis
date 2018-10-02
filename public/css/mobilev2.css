@@ -172,16 +172,16 @@ label {
     width: 100%;
     
     margin: auto auto 0 0;
-    text-align: center;
-    /* padding-right: 20px; */
+    text-align: right;
+    padding-right: 20px;
     
 }
 .player2{
     width: 100%;
     
-    /* padding-left: 20px; */
+    padding-left: 20px;
     margin: auto auto 0 0;
-    text-align: center;
+    text-align: left;
 }
 .v{
     margin: auto;
@@ -195,5 +195,11 @@ label {
     text-align: center;
     color: white;
     font-size: 25px;
-    background-color: darkslategray;
+    background-color: gray;
+}
+.match{
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: gray;
 }
