@@ -32,7 +32,7 @@
             <a href="landing_page.html">Landing Page</a>
           </li>
 					<li>
-						<a href="interaction.html">Play</a>
+						<a href="addBet.html">Play</a>
 					</li>
 					<li>
 						<a href="leaderboard.html">Leaderboard</a>
@@ -53,16 +53,18 @@
 			</nav>
 		</div>
 	</header>
+	<p id='leaderboard' class='leaderboard'></p>
     <main>
 
-    <div>
-            <class="table">
-                <table>
+    <!-- <div>
+                <table class="table">
                     <tr>
+
 						<th>
                             <h1 align="center">
                                 <i class="fas fa-crown"></i>Leaderboard</h1>
 						</th>
+
                     </tr>
                     <tr>
                         <td id = "userNameOne"></td>
@@ -96,10 +98,10 @@
                     </tr>
                 </table>
                 </class>
-        </div>
+        </div> -->
     </main>
     <footer class="footer">
-        <!-- <ul class = "links">
+        <ul class = "links">
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">FAQs</a></li>
 		<li><a href="#">Terms and Conditions</a></li>
@@ -111,12 +113,9 @@
 		<li ><a href="#" class="social-media"><i class="fa fa-twitter" style="font-size:24px"></i></li>
 		<li ><a href="#" class="social-media"><i class="fa fa-envelope" style="font-size:24px"></i></li>
 
-		</ul> -->
-		<div>
-			<ul class ="sm">
-				<li ><a href="#" class="social-media"><i class="fab fa-facebook" style="font-size:24px" ></i></a></li>
-				<li ><a href="#" class="social-media"><i class="fab fa-instagram" style="font-size:24px"></i></li>
-				<li ><a href="#" class="social-media"><i class="fab fa-twitter" style="font-size:24px"></i></li>
+</head>
+
+
 
 			</ul>
 		</div>
@@ -143,7 +142,34 @@
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/burger.js"></script>
-	<script src="js/scores.js"></script>
-	
+
+	<script>
+		var myObj, txt = "";
+		$.ajax({
+			type: "GET",
+			url: '/databases/users.json',
+			dataType: 'json',
+			async: false,
+			success: function (response) {
+				myObj = response;
+				txt += "<table class='lbTable'><tr>";
+					txt += "<th>User</th><th>Round Score</th><th>Total Score</th>";
+				txt += "</tr></thead><tbody>"
+				for (x in myObj) {
+					txt += "<tr><td>" + myObj[x].userName + "</td><td>" + myObj[x].rScore + "</td>";
+					txt += "</td><td>" + myObj[x].tScore + "</td></tr>";
+				}
+				txt += "</tbody></table>"
+				document.getElementById("leaderboard").innerHTML = txt;
+			},
+			error: function () {
+				console.log(arguments);
+				alert('Something went wrong!');
+			}
+
+		});
+
+	</script>
+
 </body>
 </html>

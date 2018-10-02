@@ -103,13 +103,17 @@ nav ul li a{
 /* end of mobile */
 footer{
     width: 100%;
+
+
 }
 
 footer ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+
     justify-content: center;
+
 }
 footer ul li{
 	padding: 10px;
@@ -119,6 +123,7 @@ footer ul li a{
 	text-decoration: none;
 	color: darkslategray;
 }
+
 .hiddenStuff {
     display: none;
 }
@@ -203,6 +208,7 @@ label {
     border-radius: 10px;
     background-color: gray;
 }
+
 
 
 
