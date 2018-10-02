@@ -1,9 +1,0 @@
-
-
-/* hides radio button, outlines text in red when its selected */
-input[type="radio"] {
-    display: none;
-}
-input[type="radio"]:checked + label {
-    border: 1px solid red;
-}
