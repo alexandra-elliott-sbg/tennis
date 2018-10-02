@@ -1,3 +1,25 @@
+/* make nav links bigger */
+*{
+	box-sizing: border-box;
+	text-align: center;
+	/* color: white; */
+}
+/* bug fixes */
+*{
+	box-sizing: border-box;
+}
+/* bug fixes */
+html{
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+  }
+
+/* bug fixes */
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding:0;
@@ -208,3 +230,106 @@ label {
     border-radius: 10px;
     background-color: gray;
 }
+.landing{
+    text-align: center;
+    color: white;
+    padding: 100px;
+    font-size: 20px;
+}
+
+/* team name text field style */
+.teamname {
+    width:250px;
+    font-size: 20px;
+}
+
+/* landing page enter button style */
+
+.button{
+    display: block;
+    margin: 0 auto;
+    height: 42px;
+    width: 42px;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    line-height: 42px;
+    font-size: 13px;
+}
+
+#avatar {
+    height: 200px;
+    width:180px;
+}
+
+.avatars ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+.submitted h1 {
+    text-align: center;
+    color: white;
+}
+
+header .image{
+    margin:5px;
+    height:50px;
+    width: 180px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.RS1 {
+   margin: auto;
+   width: auto;
+   border: solid 1px darkslategray;
+}
+.RS1 table tr td {
+   border: 1px solid red;
+}
+
+.lbTable{
+   margin: auto;
+   width: auto;
+   border: solid 1px darkslategray;
+}
+.RS2, table, th, tr, td{
+   border: 1px solid black;
+   border-collapse: collapse;
+   text-align: center;
+   vertical-align: center;
+   height: 35px;
+}
+
+.RS2{
+   width: 90%;
+   margin: auto;
+}
+
+.RS2 th, td{
+   padding: 5px;
+   text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.bets {
+    width: 80%;
+    margin: auto;
+}
+.submitted h1{
+    padding-top: 20px;
+    text-align: center;
+}
+
