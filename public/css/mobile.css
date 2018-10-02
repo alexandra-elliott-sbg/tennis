@@ -182,14 +182,10 @@ label {
     padding-left: 20px;
     margin: auto auto 0 0;
     text-align: left;
-    
-
-
 }
 .v{
     margin: auto;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 .main {
     padding-top: 50px;
@@ -199,7 +195,13 @@ label {
     text-align: center;
     color: white;
     font-size: 25px;
-    background-color: darkslategray;
+    background-color: gray;
+}
+.match{
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: gray;
 }
 
 

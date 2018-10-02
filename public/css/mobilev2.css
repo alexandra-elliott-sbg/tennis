@@ -46,9 +46,11 @@ nav ul li a{
 .searchItem{
     /* border-bottom: 1px solid darkslategray; */
     /* border: none; */
+    display: flex;
+    flex-direction: column;
 }
 .searchItem input{
-    width: 75%;
+    /* width: 75%; */
 
 }
 .searchItem button{
@@ -56,6 +58,9 @@ nav ul li a{
     font-size: 17px;
     cursor: pointer;
 
+}
+form {
+    width: 100%;
 }
 /* end of search */
 .bars{
