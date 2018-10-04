@@ -1,7 +1,7 @@
 /* make nav links bigger */
 *{
 	box-sizing: border-box;
-	text-align: center;
+	/* text-align: center; */
 	/* color: white; */
 }
 /* bug fixes */
@@ -275,6 +275,7 @@ label {
 }
 
 .submitted h1 {
+    padding-top: 50px;
     text-align: center;
     color: white;
 }
@@ -315,7 +316,7 @@ header .image{
    margin: auto;
 }
 
-.RS2 th, td{
+.RS2 th td{
    padding: 5px;
    text-align: center;
 }
@@ -328,8 +329,11 @@ tr:nth-child(even) {
     width: 80%;
     margin: auto;
 }
-.submitted h1{
-    padding-top: 20px;
-    text-align: center;
+.results{
+    justify-content: center;
 }
+.resTable{
+    justify-content: center;
+}
+
 
