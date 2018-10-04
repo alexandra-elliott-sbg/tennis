@@ -20,7 +20,6 @@ router = (app) => {
     app.route('/api/scores')
     .get((req, res) => myControllers.viewScores(app, req, res))
     .post((req, res) => myControllers.addScore(app, req, res))
-
 }
 
 

@@ -56,59 +56,7 @@
 	<p id='leaderboard' class='leaderboard'></p>
     <main>
 
-    <!-- <div>
-                <table class="table">
-                    <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 5c0750d50b443961e0d72be6beba6b354f42aa07
-						<th>
-                            <h1 align="center">
-                                <i class="fas fa-crown"></i>Leaderboard</h1>
-						</th>
-<<<<<<< HEAD
-=======
-
->>>>>>> ea59b1bd19fc079c8e1c55882c118e378b2b68be
-=======
-
->>>>>>> 5c0750d50b443961e0d72be6beba6b354f42aa07
-                    </tr>
-                    <tr>
-                        <td id = "userNameOne"></td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="material-icons" style="font-size:21px">looks_two</i>PlaceHolder</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="material-icons" style="font-size:21px">looks_3</i>PlaceHolder</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="material-icons" style="font-size:21px">looks_4</i>PlaceHolder</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="material-icons" style="font-size:21px">looks_5</i>PlaceHolder</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="material-icons" style="font-size:21px">looks_6</i>PlaceHolder</td>
-                        <td>0</td>
-                    </tr>
-                    </tr>
-                </table>
-                </class>
-        </div> -->
+    
     </main>
     <footer class="footer">
         <ul class = "links">
@@ -152,45 +100,14 @@
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/burger.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<script src="js/scores.js"></script>
+	<script src="js/leaderboard.js"></script>
+
 	
-=======
-=======
 
->>>>>>> 5c0750d50b443961e0d72be6beba6b354f42aa07
 	<script>
-		var myObj, txt = "";
-		$.ajax({
-			type: "GET",
-			url: '/databases/users.json',
-			dataType: 'json',
-			async: false,
-			success: function (response) {
-				myObj = response;
-				txt += "<table class='lbTable'><tr>";
-					txt += "<th>User</th><th>Round Score</th><th>Total Score</th>";
-				txt += "</tr></thead><tbody>"
-				for (x in myObj) {
-					txt += "<tr><td>" + myObj[x].userName + "</td><td>" + myObj[x].rScore + "</td>";
-					txt += "</td><td>" + myObj[x].tScore + "</td></tr>";
-				}
-				txt += "</tbody></table>"
-				document.getElementById("leaderboard").innerHTML = txt;
-			},
-			error: function () {
-				console.log(arguments);
-				alert('Something went wrong!');
-			}
-
-		});
+		
 
 	</script>
-<<<<<<< HEAD
->>>>>>> ea59b1bd19fc079c8e1c55882c118e378b2b68be
-=======
 
->>>>>>> 5c0750d50b443961e0d72be6beba6b354f42aa07
 </body>
 </html>
