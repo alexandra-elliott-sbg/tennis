@@ -2,7 +2,7 @@ var myObj, txt = "";
 	var formUser = document.location.hash.slice(1)
 	$.ajax({
 		type: "GET",
-		url: '/api/bets/',
+		url: '/api/bets',
 		dataType: 'json',
 		async: false,
 		success: function (response) {
