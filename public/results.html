@@ -40,6 +40,7 @@
 						</div>
 					</div>
 				</div>
+
 				<nav>
 					<div class="skyBetLogo">
 							<img src="./images/logo.png" alt="Sky Betting and Gaming Logo" class="image">
@@ -74,20 +75,9 @@
 				</nav>
 			</header>
 	<p id='results' class='results'></p>
-    <footer class="footer">
-        <!-- <ul class = "links">
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">FAQs</a></li>
-		<li><a href="#">Terms and Conditions</a></li>
-		<li ><a href="#" class="social-media"><i class="fa fa-copyright" style="font-size:12px";></i></li>
-        </ul>
-        <ul class ="sm">
-        <li ><a href="#" class="social-media"><i class="fa fa-facebook" style="font-size:24px" ></i></a></li>
-        <li ><a href="#" class="social-media"><i class="fa fa-instagram" style="font-size:24px"></i></li>
-		<li ><a href="#" class="social-media"><i class="fa fa-twitter" style="font-size:24px"></i></li>
-		<li ><a href="#" class="social-media"><i class="fa fa-envelope" style="font-size:24px"></i></li>
 
-		</ul> -->
+    <footer class="footer">
+      
 	<p id='results' class='results'></p>
 
 	<footer class="footer">
@@ -141,33 +131,7 @@
 	</footer>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/burger.js"></script>
-	<script>
-		var myObj, txt = "";
-		$.ajax({
-			type: "GET",
-			url: '/Databases/scores.json',
-			dataType: 'json',
-			async: false,
-			success: function (response) {
-				myData = response;
-				txt += "<table class='resTable'><tr>";
-				txt += "<th>Match</th><th>Player One</th><th>Score</th><th>Player Two</th>";
-				txt += "</tr></thead><tbody>";
-				for (x in myData) {
-					txt += "<tr><td>" + myData[x].match + "</td><td>" + myData[x].player1 + "</td>";
-					txt += "<td>" + myData[x].score + "</td><td>" + myData[x].player2 + "</td></tr>";
-				}
-				txt += "</tbody></table>"
-				document.getElementById("results").innerHTML = txt;
-			},
-			error: function () {
-				console.log(arguments);
-				alert('Something went wrong!');
-			}
-
-		});
-
-	</script>
+	<script src="js/scores.js"></script>
 </body>
 
 </html>
