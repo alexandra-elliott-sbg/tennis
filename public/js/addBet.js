@@ -9,10 +9,10 @@
             formData[match.name] = match.value;
         });
 
-        let endPoint = '/api/bets';
+        let endPoint = '/api/bets/';
         fetch(endPoint, {
             method: 'post',
-            body: JSON.stringify(formData),
+            data: JSON.stringify({formUser}),
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -27,3 +27,4 @@
             })
     })
 })();
+

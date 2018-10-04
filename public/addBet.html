@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/mobile.css">
-  <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/desktop.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 	<title>Interaction</title>
 </head>
 
@@ -67,9 +66,9 @@
 		<form id="makeBet" method="POST" action="/api/bets">
 			<div>
 
-				<input type="radio" name="match1" id="match1_1" value="Murray">
+				<input type="radio" name="match1" id="match1_1" value="Murray" required>
 				<label for="match1_1">Murray</label>
-				<input type="radio" name="match1" id="match1_2" value="Henman">
+				<input type="radio" name="match1" id="match1_2" value="Henman" required>
 				<label for="match1_2">Henman</label>
 
 
@@ -78,9 +77,9 @@
 			<p></p>
 			<div>
 
-				<input type="radio" name="match2" id="match2_1" value="Williams" required="required">
+				<input type="radio" name="match2" id="match2_1" value="Williams" required>
 				<label for="match2_1">Williams</label>
-				<input type="radio" name="match2" id="match2_2" value="Konta" required="required">
+				<input type="radio" name="match2" id="match2_2" value="Konta" required>
 				<label for="match2_2">Konta</label>
 
 
@@ -88,9 +87,9 @@
 			<p></p>
 			<div>
 
-				<input type="radio" name="match3" id="match3_1" value="Williams" required="required">
+				<input type="radio" name="match3" id="match3_1" value="Williams" required>
 				<label for="match3_1">Williams</label>
-				<input type="radio" name="match3" id="match3_2" value="Konta" required="required">
+				<input type="radio" name="match3" id="match3_2" value="Konta" required>
 				<label for="match3_2">Konta</label>
 
 
@@ -98,9 +97,9 @@
 			<p></p>
 			<div>
 
-				<input type="radio" name="match4" id="match4_1" value="Federer" required="required">
+				<input type="radio" name="match4" id="match4_1" value="Federer" required>
 				<label for="match4_1">Federer</label>
-				<input type="radio" name="match4" id="match4_2" value="Becker" required="required">
+				<input type="radio" name="match4" id="match4_2" value="Becker" required>
 				<label for="match4_2">Becker</label>
 
 
@@ -124,5 +123,8 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="/js/burger.js"></script>
 <script src="js/addBet.js"></script>
+
+<script>
+</script>
 
 </html>

@@ -2,24 +2,14 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<title>Document</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-	<!-- asks if its a screen and >600px then use desktop stylesheet -->
-	<link rel="stylesheet" media="only screen and (min-width : 600px)" href="/css/main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
-	 <link rel="stylesheet" href="/css/mobile.css">
-	<link rel="stylesheet" href="/css/desktop.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 	<title>Results</title>
 </head>
 
@@ -76,45 +66,8 @@
 			<h1 align="center">
 			</i>Results</h1>
 	</div>
-    <main>
-		<div class="grid-container">
-            <div class="grid-item">
-                <p>Match 1 Player1 v Player2</p>
-                
-               
-
-            </div>
-            <div class="grid-item">
-			
-                <p>Match 1 Player1 v Player2</p>
-              
-            </div>
-            <div class="grid-item">
-                <p>Match 1 Player1 v Player2</p>
-                
-            </div>
-            <div class="grid-item">
-                <p>Match 1 Player1 v Player2</p>
-               
-            </div>
-        </div>
-        </div>
-    
-    </main>
+   
     <footer class="footer">
-        <!-- <ul class = "links">
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">FAQs</a></li>
-		<li><a href="#">Terms and Conditions</a></li>
-		<li ><a href="#" class="social-media"><i class="fa fa-copyright" style="font-size:12px";></i></li>
-        </ul>
-        <ul class ="sm">
-        <li ><a href="#" class="social-media"><i class="fa fa-facebook" style="font-size:24px" ></i></a></li>
-        <li ><a href="#" class="social-media"><i class="fa fa-instagram" style="font-size:24px"></i></li>
-		<li ><a href="#" class="social-media"><i class="fa fa-twitter" style="font-size:24px"></i></li>
-		<li ><a href="#" class="social-media"><i class="fa fa-envelope" style="font-size:24px"></i></li>
-
-		</ul> -->
 	<p id='results' class='results'></p>
 
 	<footer class="footer">
@@ -168,33 +121,7 @@
 	</footer>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/burger.js"></script>
-	<script>
-		var myObj, txt = "";
-		$.ajax({
-			type: "GET",
-			url: '/Databases/scores.json',
-			dataType: 'json',
-			async: false,
-			success: function (response) {
-				myData = response;
-				txt += "<table class='resTable'><tr>";
-				txt += "<th>Match</th><th>Player One</th><th>Score</th><th>Player Two</th>";
-				txt += "</tr></thead><tbody>";
-				for (x in myData) {
-					txt += "<tr><td>" + myData[x].match + "</td><td>" + myData[x].player1 + "</td>";
-					txt += "<td>" + myData[x].score + "</td><td>" + myData[x].player2 + "</td></tr>";
-				}
-				txt += "</tbody></table>"
-				document.getElementById("results").innerHTML = txt;
-			},
-			error: function () {
-				console.log(arguments);
-				alert('Something went wrong!');
-			}
-
-		});
-
-	</script>
+	<script src="js/scores.js"></script>
 </body>
 
 </html>

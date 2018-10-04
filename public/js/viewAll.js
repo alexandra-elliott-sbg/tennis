@@ -1,4 +1,4 @@
-console.info('view all js here')
+
 fetch('/api/bets')
 .then(function(response){
     return response.json();
